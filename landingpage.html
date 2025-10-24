@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AirStay — Find Cozy Places to Stay</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="bnb.jpg" width="150" height="auto"alt="AirStay logo" class="logo-img">
+        <h1 class="logo-text">Air<span>Stay</span></h1>
+      </div>
+      <nav class="nav">
+        <a href="#features">Why AirStay</a>
+        <a href="#popular">Popular Stays</a>
+        <a href="#contact">Contact</a>
+        <a class="btn small" href="#book">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h2>Discover unique homes and experiences — anywhere, anytime</h2>
+        <p>AirStay helps travelers find cozy, verified stays with easy booking and helpful hosts. Perfect for weekend getaways, business trips, and long stays.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#book">Search Stays</a>
+          <button id="learnBtn" class="btn ghost">How it works</button>
+        </div>
+        <ul class="stats">
+          <li><strong id="reservationsCounter">12,345</strong><span>Reservations</span></li>
+          <li><strong>4.9</strong><span>Average Rating</span></li>
+          <li><strong>8,200+</strong><span>Hosts</span></li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=900&q=60" alt="Cozy home interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Why -->
+  <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title">Why choose AirStay?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Verified Hosts</h3>
+          <p>All hosts pass ID verification and property checks for trustworthy stays.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure Payments</h3>
+          <p>Encrypted payments and transparent pricing with no hidden fees.</p>
+        </div>
+        <div class="feature">
+          <h3>24/7 Support</h3>
+          <p>Live chat and phone support to help you every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular stays (cards / columns) -->
+  <section id="popular" class="section popular">
+    <div class="container">
+      <h2 class="section-title">Popular stays this month</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=60" alt="Seaside cabin">
+          <div class="card-body">
+            <h4>Seaside Cabin</h4>
+            <p class="muted">2 guests • 1 bedroom</p>
+            <div class="card-row">
+              <span class="price">$95 / night</span>
+              <button class="btn small" data-stay="Seaside Cabin">Reserve</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=60" alt="City loft">
+          <div class="card-body">
+            <h4>City Loft</h4>
+            <p class="muted">4 guests • 2 bedrooms</p>
+            <div class="card-row">
+              <span class="price">$140 / night</span>
+              <button class="btn small" data-stay="City Loft">Reserve</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=60" alt="Countryside cottage">
+          <div class="card-body">
+            <h4>Countryside Cottage</h4>
+            <p class="muted">5 guests • 3 bedrooms</p>
+            <div class="card-row">
+              <span class="price">$120 / night</span>
+              <button class="btn small" data-stay="Countryside Cottage">Reserve</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick booking form (contact/personal dummy) -->
+  <section id="book" class="section booking">
+    <div class="container booking-grid">
+      <div class="booking-info">
+        <h2>Quick Book</h2>
+        <p>Fill the form below to simulate a reservation. (This is a demo — submissions are not sent anywhere.)</p>
+
+        <!-- Dummy personal details example (non-editable preview) -->
+        <div class="personal-preview">
+          <h4>Example reservation (dummy)</h4>
+          <p><strong>Name:</strong> Alex Johnson</p>
+          <p><strong>Email:</strong> alex.johnson@example.com</p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><strong>Guests:</strong> 2</p>
+          <p><strong>Stay:</strong> City Loft</p>
+          <p class="muted">Total reservations so far: <strong id="reservationsPreview">12,345</strong></p>
+        </div>
+      </div>
+
+      <form id="bookingForm" class="booking-form" aria-label="Booking form">
+        <label>
+          Full name
+          <input type="text" name="name" placeholder="Your full name" required value="Alex Johnson">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="name@example.com" required value="alex.johnson@example.com">
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="+1 (555) 123-4567" value="+1 (555) 123-4567" required>
+        </label>
+
+        <label>
+          Select stay
+          <select name="stay" required>
+            <option>Seaside Cabin</option>
+            <option selected>City Loft</option>
+            <option>Countryside Cottage</option>
+          </select>
+        </label>
+
+        <label>
+          Guests
+          <input type="number" name="guests" min="1" max="10" value="2" required>
+        </label>
+
+        <button type="submit" class="btn">Confirm Reservation</button>
+
+        <p class="small muted">Need help? Email <strong>hello@airstay.example</strong> or call <strong>+1 (555) 000-0000</strong></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="muted">For host inquiries, partnerships, or press — reach out to our demo contacts below.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Support</h4>
+          <p>Email: support@airstay.example</p>
+          <p>Phone: +1 (555) 000-0000</p>
+        </div>
+        <div class="contact-card">
+          <h4>Partnerships</h4>
+          <p>Email: partners@airstay.example</p>
+          <p>Representative: Maria Lopez</p>
+        </div>
+        <div class="contact-card">
+          <h4>Press</h4>
+          <p>Email: press@airstay.example</p>
+          <p>PR: Daniel Kim</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> AirStay (demo). All demo data is fictional.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
