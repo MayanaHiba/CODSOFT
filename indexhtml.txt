@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayana Hiba - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Online Portfolio</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Mayana Hiba</h1>
+            <p>I’m a passionate learner and aspiring developer with an interest in solving problems creatively and learning new technologies.</p>
+            <button>Hire Me</button>
+        </div>
+        <img src="hiba.jpg" alt="Mayana Hiba">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="hiba.jpg" alt="Mayana Hiba">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi! I’m Mayana Hiba, a curious mind with a love for problem-solving and technology. 
+                I enjoy learning new skills, communicating ideas clearly, and creating digital solutions that make an impact. 
+                I’m currently exploring web development and building projects to strengthen my technical foundation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div>Problem Solving</div>
+            <div>Communication</div>
+            <div>Basic Tech Knowledge</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Alumni Platform</h3>
+            <p>
+                A mini web project designed to connect students and alumni for networking and career opportunities. 
+                Built using HTML and CSS with a focus on simplicity, clarity, and responsive design.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: m************2</p>
+        <p>Phone: 8********5</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mayana Hiba. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>

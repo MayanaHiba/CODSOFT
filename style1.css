@@ -1,0 +1,37 @@
+/* ===== Typing Animation Cursor ===== */
+.hero-text h1 {
+    border-right: 3px solid #00aaff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinkCursor 0.8s steps(1) infinite;
+}
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+/* ===== Scroll-To-Top Button ===== */
+.scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1500;
+}
+.scroll-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.scroll-top:hover {
+    background-color: #0056b3;
+}
